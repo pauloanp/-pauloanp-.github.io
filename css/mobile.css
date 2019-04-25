@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+.temporary {
+  width: 320px;
+}
+.start {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    ". about"
+    "a a"
+    "work ."
+    ". contacts";
+  background-image: url(../imgs/IMG_8646.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-height: 410px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.a {
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  grid-area: a;
+  font-size: 47px;
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  bottom: 0;
+  left: 0;
+}
+.box {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.about {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  grid-area: about;
+  font-size: 60px;
+  position: absolute;
+  top: -20px;
+  right: -130px;
+  bottom: 0;
+  left: 0;
+}
+.work {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  grid-area: work;
+  font-size: 60px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: -160px;
+}
+.contacts {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  grid-area: contacts;
+  font-size: 60px;
+  position: absolute;
+  top: 100px;
+  right: -215px;
+  bottom: 0;
+  left: 0;
+}
+.menu {
+  cursor: pointer;
+}
+.about:hover {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -20px;
+  right: 100%;
+  transition: right 0.4s;
+  transition-delay: 0.1s;
+}
+.work:hover {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 70px;
+  left: 100%;
+  transition: left 0.4s;
+  transition-delay: 0.1s;
+}
+.contacts:hover {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 100px;
+  right: 100%;
+  transition: right 0.4s;
+  transition-delay: 0.1s;
+}
+.sobre {
+  background-color: white;
+  color: rgb(104, 104, 104);
+  font-size: 15px;
+  position: absolute;
+  top: 420px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+}
+.title {
+  font-size: 21px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+img {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 320px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  right: 5px;
+  max-width: 310px;
+}
+.trabalho {
+  background-color: white;
+  color: rgb(104, 104, 104);
+  font-size: 15px;
+  position: absolute;
+  top: 1560px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+}
+.left {
+  text-align: left; 
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.right {
+  text-align: right;
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.legenda {
+  position: relative;
+  top: -35px;
+  
+}
+.direita { 
+  position: relative;
+  max-width: 320px;
+  padding-left: 100px
+}
+.esquerda {
+  max-width: 220px;
+}
